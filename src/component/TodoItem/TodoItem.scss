@@ -1,0 +1,60 @@
+.todo-item {
+  .heading-box {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    h2 {
+      font-size: 1.3rem;
+      text-transform: capitalize;
+      font-weight: 400;
+      color: #ff90a2;
+    }
+    span {
+      font-weight: 300;
+      font-style: italic;
+      font-size: 1rem;
+    }
+  }
+
+  .content {
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+
+  .operation-todo {
+    display: flex;
+    justify-content: flex-end;
+    button {
+      outline: none;
+      border: none;
+      padding: 8px 15px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+      cursor: pointer;
+      background-color: transparent;
+      font-weight: lighter;
+      transition: 0.3s;
+
+      &:hover{
+        box-shadow: 0 5px 10px rgba(0,0,0,.2);
+        transform: translateY(-5px);
+      }
+      &:active{
+        box-shadow: 0 3px 7px rgba(0,0,0,.2);
+        transform: translateY(-3px);
+      }
+      i {
+        font-family: 'Font Awesome 5 Free';
+        color: #e58c8a;
+      }
+    }
+    .edit {
+      border-bottom: 3px solid rgb(74, 221, 131);
+    }
+
+    .delete {
+      margin-left: 10px;
+      border-bottom: 3px solid rgb(255, 115, 115);
+    }
+  }
+}

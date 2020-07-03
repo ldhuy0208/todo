@@ -1,0 +1,24 @@
+.back-drop {
+  background-color: rgba(231, 231, 231, 0.479);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  opacity: 1;
+  transition: 0.3s;
+  .modal {
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    top: 50%;
+    transform: translateY(-55%);
+  }
+}
+
+.modal-hide {
+  opacity: 0;
+  z-index: -1;
+}
